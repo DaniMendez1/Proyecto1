@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(30, 30, 30);
+    color: #FFFFFF;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 135px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(30, 30, 30);
+}
+
+nav{
+    width: 100%;
+}
+#lista1{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+#lista2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+}
+
+button{
+    border: 2px solid #333; 
+    border-radius: 12px;  
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+    background-color: rgb(30, 30, 30);
+    width: 70px;
+    height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+
+
+
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'inter', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    color: #FFFFFF;
+   
+}
+
+#hero {
+    height: 400px;
+    width: auto;
+    background-image: url(https://natosywaor.com/cdn/shop/files/inicio-web-natos-y-waor.jpg?v=1727941173&width=3840);
+    background-size: cover;
+    background-position: top;
+    filter: opacity(0.6);
+}
+
+main{
+padding-top: 135px;
+}
+
+h1 { 
+    font-family: 'inter', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 40px;
+    padding-left: 100px;
+    border: 2px solid red;
+    height: 100vh;
+}
+
+@media (max-width: 650px){
+    header{
+        padding-left: 40px;
+    }
+    header a{
+        font-size: 12px;
+    }
+
+}
+
