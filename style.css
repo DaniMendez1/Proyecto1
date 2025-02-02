@@ -1,3 +1,7 @@
+/*
+    ESTILOS GLOBALES
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +11,12 @@
 body{
     background-color: rgb(30, 30, 30);
     color: #FFFFFF;
+    
 }
+
+/*
+    HEADER
+*/
 
 header{
     display: flex;
@@ -25,6 +34,7 @@ header{
 nav{
     width: 100%;
 }
+
 #lista1{
     display: flex;
     align-items: center;
@@ -57,9 +67,6 @@ button{
     color: #FFFFFF;
 }
 
-
-
-
 a{
     text-transform: uppercase;
     text-decoration: none;
@@ -67,7 +74,6 @@ a{
     font-size: 14px;
     font-weight: 900;
     color: #FFFFFF;
-   
 }
 
 #hero {
@@ -79,9 +85,19 @@ a{
     filter: opacity(0.6);
 }
 
+/*
+   MAIN
+*/
+
 main{
-padding-top: 135px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 135px;
 }
+
+/*
+    SECTION1
+*/
 
 h1 { 
     font-family: 'inter', sans-serif;
@@ -91,16 +107,110 @@ h1 {
     text-transform: uppercase;
     padding: 40px;
     padding-left: 100px;
-    border: 2px solid red;
-    height: 100vh;
 }
 
-@media (max-width: 650px){
+#merchandising ul{
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'inter', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+#merchandising{
+    height: 600px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#merchandising ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    border: 2px solid blue;
+
+}
+
+#merchandising ul img{
+    height: 500px;
+    width: 100%;
+    padding-top: 10px;
+    object-fit:contain;
+    object-position: top;
+}
+
+h3{
+    margin: 20px;
+}
+
+/*
+    SECTION2
+*/
+
+#bio{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 2px solid red;
+}
+
+h2{
+    font-family: 'inter', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+
+#bio ul{
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+#bio p{
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+
+
+
+#bio img{
+    border: 2px solid orange;
+    float: right;
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+@media (max-width: 830px){
     header{
+        display: flex;
+        flex-wrap: wrap;
         padding-left: 40px;
+        min-width: 520px;
     }
+
+
+
     header a{
         font-size: 12px;
+    }
+
+    body{
+        min-width: 400px;
+        overflow-x: auto;
+
     }
 
 }
