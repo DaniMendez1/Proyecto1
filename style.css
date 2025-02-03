@@ -155,7 +155,7 @@ h3{
     justify-content: space-between;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 50px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -167,15 +167,16 @@ div{
     flex-direction: column;
     height: 100%;
     width: 50%;
+    grid-area: div;
 }
 
 h2{
     align-self: flex-start;
-    margin-left: 100px;
+    margin-left: 20px;
     font-family: 'inter', sans-serif;
     font-size: 20px;
     font-weight: 900;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     color: #FFFFFF;
     text-transform: uppercase;
 }
@@ -185,7 +186,6 @@ h2{
 
 #bio p{
     width: 70%;
-    text-align: center;
     font-family: 'Times New Roman', Times, sans-serif;
     float: left;
     font-size: 18px;
@@ -195,6 +195,7 @@ h2{
 
 
 #bio img{
+    grid-area: img;
     width: 80%;
     height: 500px;
     object-fit: cover;
@@ -204,6 +205,14 @@ h2{
 section button{
     margin: 20px;
     width: 100px;
+}
+
+footer p{
+    padding: 100px;
+    margin-top: 40px;
+    border-top: 2px solid white;
+    color: gray;
+
 }
 
 
@@ -216,17 +225,46 @@ section button{
         min-width: 520px;
     }
 
+header a{
+    font-size: 12px;
+}
 
+}
 
-    header a{
-        font-size: 12px;
+@media (max-width: 1300px){
+    #bio{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 10px;
+        width: 90%;
+        padding: 50px;
+      
+        
+        
+         }
+    #bio img{
+        width: 100%;
+        height: 100%;
+        min-width: 350px;
+        object-fit: cover;
     }
 
-    body{
-        min-width: 400px;
-        overflow-x: auto;
-
+    #bio p{
+        width: 100%;
+        min-width: 300px;
     }
+    div{
+        width: 100%;
+        height: 100%;
+        
+    }
+h2{
+    width: 100%;
+    
+  
+}
+
 
 }
 
